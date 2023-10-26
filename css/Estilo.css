@@ -72,6 +72,36 @@ nav ul li {
     margin-right: 5px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo img {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s ease; 
+}
+
+.logo span {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: auto;
+    transition: all 0.3s ease; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 5px;
+    transition: all 0.3s ease; 
+}
+
 /* ------MAIN------ */
 
 main{
@@ -94,18 +124,15 @@ main{
 }
 
 /* IMÁGENES*/
-img{
+.img1 img, .img2 img, .img3 img, .img4 img{
     max-width: 100%;
     max-height:100%;
-    overflow: hidden;
-    object-fit: cover;
     margin: 30px;
     padding:0;
-    border: 3px solid rgb(160, 159, 159);  
-    justify-items: center; 
-}
+    border: 3px  solid rgb(160, 159, 159);  
+} 
 
-img:hover{
+.img1:hover, .img2:hover, .img3:hover, .img4:hover{
     transform:scale(1.1,1.1)
 }
 
@@ -217,37 +244,6 @@ footer a i {
       color: #fff; 
   }
 
-/* Reglas de estilo para el logo y el texto en el encabezado */
- 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.logo img {
-    height: 50px;
-    width: auto;
-    transition: all 0.3s ease; 
-}
-
-.logo span {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: auto;
-    transition: all 0.3s ease; 
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 5px;
-    transition: all 0.3s ease; 
-}
 
 @media (max-width: 600px) {
     .logo img {
@@ -283,7 +279,7 @@ nav ul li {
     grid-template-rows: repeat(5, 20%);
     grid-auto-flow: column;
     align-items: center;
-    /* text-wrap: nowrap;} */}
+    }
 
     .presentacion{
     grid-column: 1/span 2;
@@ -340,4 +336,3 @@ nav ul li {
     grid-row: 5/6;
     }
 }
-
