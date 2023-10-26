@@ -57,16 +57,16 @@
             <div class="user_info">
 
                 <label for="full-name">Nombre y Apellido *</label>
-                <input type="text" id="names" name="names">
+                <input type="text" id="names" name="names" required>
 
                 <label for="telephone" >Teléfono / Celular *</label>
-                <input type="text" id="phone" name="phone">
+                <input type="text" id="phone" name="phone"required>
 
                 <label for="email-address" >Correo Electrónico *</label>
-                <input type="text" id="email" name="email">
+                <input type="text" id="email" name="email" required>
 
                 <label for="complaint" >Mensaje *</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
                 <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
                 <input type="submit" value="Enviar Mensaje" id="btnSend">
             </div>
