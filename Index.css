@@ -60,24 +60,6 @@ nav {
   }
   
 
-@media (max-width: 600px) {
-    #menu {
-        display: none;
-    }
-    
-    #menu-hamburguesa {
-        display: block;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-   
-}
-
-
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -177,15 +159,15 @@ footer {
  }
  
  .email {
-     display: inline-block; /* Esto permitirá que el padding y el border-radius se apliquen correctamente */
-     padding: 5px; /* Esto agregará un poco de espacio alrededor del texto */
-     border-radius: 60px; /* Esto redondeará las esquinas */
-     transition: all 0.3s ease; /* Esto hará que los cambios sean suaves */
+     display: inline-block; 
+     padding: 5px; 
+     border-radius: 60px; 
+     transition: all 0.3s ease; 
  }
  
  .email:hover {
-     background-color: #333; /* Cambia esto al color de fondo que quieras cuando el mouse esté encima */
-     color: #fff; /* Cambia esto al color de la fuente que quieras cuando el mouse esté encima */
+     background-color: #333; 
+     color: #fff; 
  }
 
 
@@ -203,18 +185,56 @@ footer {
     justify-content: space-between;
 }
 
+
 .logo img {
     height: 50px;
     width: auto;
+    transition: all 0.3s ease; 
 }
 
 .logo span {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    color: white; 
+    color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-right: auto;
-    
+    transition: all 0.3s ease; 
 }
+
+nav ul li {
+    display: inline;
+    margin-right: 5px;
+    transition: all 0.3s ease; 
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        height: 30px; 
+    }
+
+    .logo span {
+        font-size: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px; /
+    }
+
+    @media (max-width: 400px) {
+        .logo img {
+            height: 20px; 
+        }
+
+        .logo span {
+            font-size: 10px; 
+        }
+        header a {
+            font-size: 10px;
+        }
+    }
+}
+
+

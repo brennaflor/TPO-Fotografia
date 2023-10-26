@@ -36,7 +36,7 @@ cambiarImagen(true);
 
 
 document.querySelector('.email').addEventListener('click', function(event) {
-    event.stopPropagation(); // Esto evitará que el evento de clic se propague al elemento <a> padre
+    event.stopPropagation(); 
     var email = event.target.innerText;
     navigator.clipboard.writeText(email);
     alert('Correo electronico copiado: ' + email);
