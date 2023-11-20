@@ -106,6 +106,47 @@ h1{
     font-size: 40px;
 }
 
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: rgb(179, 165, 165);
+    text-decoration: underline;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    font-weight: 100;
+    text-align: right;
+    padding: 20px 45px 0;
+    font-size: 25px;
+}
+
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: rgb(179, 165, 165);
+    text-decoration: underline;
+    background: rgba(165, 10, 10, 0);
+    position: relative;
+    font-weight: 100;
+    text-align: right;
+    padding: 20px 45px 0;
+    font-size: 25px;
+}
+
+p{
+    font-family: 'Nunito';
+    font-size: 10px;
+    color: rgb(231, 219, 219);
+    text-decoration: none;
+    background: rgba(243, 226, 128, 0.11);
+    position: relative;
+    font-weight: 100;
+    text-align: left;
+    text-justify: auto;
+    padding: 1px 45px 1px 45px;
+    font-size: 18px;
+}
+
 .galeria > a{
     display: block;
     position: relative;
